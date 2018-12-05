@@ -1,7 +1,6 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { colors, margins } from './styles'
+import { colors } from './styles'
 
 const headerWrapperStyle = {
   background: colors.primary,
