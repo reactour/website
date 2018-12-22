@@ -1,28 +1,27 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { colors } from './styles'
+import BannerImage from './bannerImage'
 
 const headerWrapperStyle = {
   background: colors.primary,
   marginBottom: 0,
-  height: '40vh',
+  height: '300px',
 }
 
 const headerStyle = {
-  color: colors.text.primary,
-  textAlign: 'center',
-  position: 'relative',
-  top: '40%',
-  fontSize: '4rem',
+  margin: '0 auto',
+  width: '300px',
+  height: '300px',
 }
 
 const Header = ({ siteTitle }) => (
   <div
     style={headerWrapperStyle}
   >
-    <h1 style={headerStyle}>
-        {siteTitle}
-    </h1>
+    <div style={headerStyle}>
+      <BannerImage />
+    </div>
   </div>
 )
 
