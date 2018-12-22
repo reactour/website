@@ -4,7 +4,9 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './layout.css'
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -34,6 +36,7 @@ const Layout = ({ children }) => (
             margin: '0 auto',
             paddingTop: 0,
           }}
+          className="container-fluid"
         >
           {children}
         </div>
