@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Card = ({header, text, classes}) => (
-  <div className={classes}>
-    <h3>
-      {header}
-    </h3>
-    {text}
-    </div>
+const Card = ({header, text, classes, children}) => (
+    <div className={classes}>
+      <h3 className="card-header">
+        {header}
+      </h3>
+      {text}
+      {children}
+      </div>
 )
+
 export default Card

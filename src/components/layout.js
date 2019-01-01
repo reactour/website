@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './layout.css'
+import '../style/layout.scss'
 
 
 const Layout = ({ children }) => (
@@ -29,6 +29,7 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet"></link>
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
