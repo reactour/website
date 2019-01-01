@@ -1,0 +1,15 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './frontpage.scss';
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: $text-font;
+}
+
+h1, h2, h3, h4 {
+  font-family: $header-font;
+}

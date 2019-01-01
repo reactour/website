@@ -1,0 +1,17 @@
+.frontpage {
+  :last-child {
+    margin-bottom: 3em;
+  }
+}
+
+.frontpage-cards {
+
+  margin: 1em 0;
+
+  .card-header {
+    background-color: $white;
+    border: 0;
+    text-align: center;
+    margin: 0;
+  }
+}
