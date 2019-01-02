@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Card from '../components/card'
@@ -22,11 +23,16 @@ const Where = () => (
 )
 
 const Signup = () => (
-  <span>
-    You can sign up by filling the <a id="signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdW397wR7X7bOmTYhntr2chmaRZ-BcOm3HrgovGbVIWN1dkcg/viewform?usp=sf_link">signup form</a>.
-    Please note that the amount of participants we can accept is 30, so if you cannot make it,
-    please inform us at <a href="mailto:someone@yoursite.com">reactour.org@gmail.com</a>!
-  </span>
+  <div>
+    <p>
+      You can sign up by filling the <a id="signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdW397wR7X7bOmTYhntr2chmaRZ-BcOm3HrgovGbVIWN1dkcg/viewform?usp=sf_link">signup form</a>.
+      Please note that the amount of participants we can accept is 30, so if you cannot make it,
+      please inform us at <a href="mailto:someone@yoursite.com">reactour.org@gmail.com</a>!
+    </p>
+    <p>
+      Before signing up, please review our <Link to="/privacy-policy">privacy policy</Link>.
+    </p>
+  </div>
 )
 
 const IndexPage = () => {
