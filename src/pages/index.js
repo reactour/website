@@ -23,8 +23,9 @@ const Where = () => (
 
 const Signup = () => (
   <span>
-    You can sign up by filling the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdW397wR7X7bOmTYhntr2chmaRZ-BcOm3HrgovGbVIWN1dkcg/viewform?usp=sf_link">signup form</a>.
-    Please note that the amount of participants we can accept is 30, so if you cannot make it, please inform us! 
+    You can sign up by filling the <a id="signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdW397wR7X7bOmTYhntr2chmaRZ-BcOm3HrgovGbVIWN1dkcg/viewform?usp=sf_link">signup form</a>.
+    Please note that the amount of participants we can accept is 30, so if you cannot make it,
+    please inform us at <a href="mailto:someone@yoursite.com">reactour.org@gmail.com</a>!
   </span>
 )
 
@@ -35,11 +36,11 @@ const IndexPage = () => {
         <div className="col-12 col-md-5">
           <Card header="What?" text={purpose} classes="frontpage-cards col-12"/>
           <Card header="When?" text={when} classes="frontpage-cards col-12"/>
-          <Card header="Where?" classes="frontpage-cards col-12" >
-            <Where />
-          </Card>
           <Card header="Signup" classes="frontpage-cards col-12">
             <Signup />
+          </Card>
+          <Card header="Where?" classes="frontpage-cards col-12" >
+            <Where />
           </Card>
         </div>
       </div>
